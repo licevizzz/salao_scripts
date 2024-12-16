@@ -137,7 +137,22 @@ WHERE c.IDCliente NOT IN (
 );
 
 
+UPDATE Cliente
+SET Endereco = 'Rua Nova, 101'
+WHERE IDCliente = 1;
 
+
+UPDATE Servico
+SET Preco = 35.00
+WHERE IDServico = 1;
+
+
+DELETE FROM Agendamento
+WHERE IDAgendamento = 4;
+
+
+DELETE FROM Feedback
+WHERE IDProfissional = 2 AND IDCliente = 2;
 
 
 
